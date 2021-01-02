@@ -1,0 +1,46 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.2.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Sep 19, 2015 at 11:39 AM
+-- Server version: 5.0.45
+-- PHP Version: 5.2.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `onlinebank`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bank`
+--
+
+CREATE TABLE `bank` (
+  `username` varchar(100) default NULL,
+  `password` varchar(100) default NULL,
+  `repassword` varchar(100) default NULL,
+  `amount` int(11) default NULL,
+  `adderess` varchar(100) default NULL,
+  `phone` varchar(100) default NULL,
+  `account` int(11) NOT NULL auto_increment,
+  PRIMARY KEY  (`account`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=65610165 ;
+
+--
+-- Dumping data for table `bank`
+--
+
+INSERT INTO `bank` (`username`, `password`, `repassword`, `amount`, `adderess`, `phone`, `account`) VALUES
+('chetan saraswat', 'chetan', 'chetan', 8000, 'khair', '9045104539', 65610016),
+('vimal', 'vimal', 'vimal', 11600, 'near thasna', '9078654323', 65610017),
+('suhail', 'suhail', 'suhail', 9000, 'jamalpur', '8273177933', 65610019),
+('rinku kumar', 'rinku', 'rinku', 8000, 'neare dodphur', '9078654334', 65610023),
+('javed', 'javed', 'javed', 9000, 'civil line dodphur', '09876675434', 65610033),
+('rinku sharma', 'rinku', 'rinku', 8000, 'neare dodphur', '9078654334', 65610060),
+('meena', 'meena', 'meena', 200, 'civil line dodphur', '8756435634', 65610065),
+('praveen', 'praveen', 'praveen', 10000, 'Civil line', '9267444035', 65610163),
+('yogesh', 'yogesh', 'yogesh', 8000, 'civil line', '9267444035', 65610164);
